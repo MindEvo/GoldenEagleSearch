@@ -14,15 +14,17 @@ app.use(cors(options));
 app.use(express.json());
 
 // require in resource routes
-const users = require('./api/users/users.routes.js');
-const snippets = require('./api/snippets/snippets.routes.js');
-const bookmarks = require('./api/bookmarks/bookmarks.routes.js');
+const students = require('./api/students/students.routes.js');
+const professors = require('./api/professors/professors.routes.js');
+const reviews = require('./api/reviews/reviews.routes.js');
+const courses = require('./api/courses/courses.routes.js')
 
 // add the resource route to our express app
 // localhost:8080/users
-app.use('/users', users);
-app.use('/snippets', snippets);
-app.use('/bookmarks', bookmarks);
+app.use('/students', studentss);
+app.use('/professors', professors);
+app.use('/reviews', reviews);
+app.use('/courses', courses);
 
 app.listen(PORT, async () => {
     console.log(`Server is listening on port ${PORT}`);
