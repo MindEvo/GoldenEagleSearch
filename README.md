@@ -1,2 +1,1 @@
-# GoldenEagleSearch
-Class Project
+# Snippets
